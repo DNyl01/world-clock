@@ -61,7 +61,7 @@ select:focus {
 .city {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   padding: 18px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
