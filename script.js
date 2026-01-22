@@ -26,3 +26,11 @@ londresTimeEl.innerHTML = moment().format("hh:mm:ss A");
 
 
 }
+function updateCity(event) {
+  let timeZone = event.target.value;
+
+  if (timeZone !== "") {
+    let cityTime = moment().tz(timeZone).format("hh:mm:ss A");
+    document.querySelector("#city").innerHTML = cityTime;
+  }
+}
