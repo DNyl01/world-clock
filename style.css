@@ -11,8 +11,8 @@ body {
 }
 
 #container {
-  margin: 60px auto;
-  max-width: 100%;
+  margin: 50px auto;
+  max-width: 70%;
   background-color: white;
   border-radius: 14px;
   padding: 28px 32px;
@@ -28,10 +28,9 @@ h1 {
 select {
   -webkit-appearance: none;
   appearance: none;
-
   display: block;
-  width: 100%;
-  max-width: 520px;
+  width: 80%;
+
   height: 54px;
   margin: 0 auto 24px;
 
