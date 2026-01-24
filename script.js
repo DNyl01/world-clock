@@ -45,6 +45,7 @@ let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     <div class="time"> ${cityTime.format("MMMM Do YYYY")} </div>
 <div class="date"> ${cityTime.format(" hh:mm:ss A")} </div >
  </div>
+ <a href="/">All cities</a>
 `
 ;
 
