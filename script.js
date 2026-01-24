@@ -26,12 +26,13 @@ let londresDateEl = londresEl.querySelector(".date");
 let londresTimeEl = londresEl.querySelector(".time");
 londresDateEl.innerHTML = moment().tz("Europe/London").format("DD/MM/YYYY");
     londresTimeEl.innerHTML = moment().tz("Europe/London").format("hh:mm:ss A");
-  }
+  }}
 
 
-}
-function updateCity(event){
-    let cityTimeZone = event.target.value; 
+function updateCity(event)
+{ let cityTimeZone = event.target.value; 
+    if (cityTimeZone === "current"){cityTimeZone = moment.tz.guess();}
+   
     let cityTime = moment().tz(cityTimeZone);
     let citiesEl = document.querySelector("#cities");
 
@@ -39,7 +40,7 @@ function updateCity(event){
 let cityName = cityTimeZone.replace("_", " ").split("/")[1];
 
     citiesEl.innerHTML = 
- ` <div class="city" 
+ ` <div class="city" >
     <h2>${cityName} </h2>
     <div class="time"> ${cityTime.format("MMMM Do YYYY")} </div>
 <div class="date"> ${cityTime.format(" hh:mm:ss A")} </div >
